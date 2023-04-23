@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chronic Kidney Disease Prediction</title>
+</head>
+<body background="IMG-20230422-WA0009.jpg" style="background-repeat:no-repeat;background-size:100%">
+<h1 align="right">
+    <font face="sans serif" size="4">
+        <a href="home.html">HOME</a>
+    </font></h1>
+<h1 align="center">
+    <font face="Italic" color=#00000" size="6">
+    CHRONIC KIDNEY DISEASE PREDICTION
+    </font>
+</h1>
+<h4 align="center">
+    <font face="Lato" size="3" color="#fffff">
+        A Machine Learning Web App Built With Flask
+    </font>
+</h4>
+<form action="/pred" method="post">
+
+    <table border="1" width="45%" align="center">
+
+        <tr>
+            <td>Enter your Blood_urea</td>
+            <td><input type="text" value="" name="blood_urea" title="Enter your Blood_urea"</td>
+        </tr>
+
+        <tr>
+            <td>Enter your Blood_glucose_random</td>
+            <td><input type="text" value="" name="blood_glucose_random" title="Enter your Blood_glucose_random" id="bloo_glucose_random"/></td>
+        </tr>
+        <tr>
+            <td>Select Anemia or not</td>
+            <td><select name="anemia">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select></td>
+        </tr>
+
+           <tr>
+            <td>Select Coronary_artery_disease or not</td>
+            <td><select name="coronary_artery_disease">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select></td>
+        </tr>
+
+   <tr>
+            <td>Select Pus_cell or not</td>
+            <td><select name="pus_cell">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Normal</option>
+                <option value="2">AbNormal</option>
+            </select></td>
+        </tr>
+
+   <tr>
+            <td>Select Red_blood_cell or not</td>
+            <td><select name="red_blood_cell">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Normal</option>
+                <option value="2">AbNormal</option>
+            </select></td>
+        </tr>
+
+   <tr>
+            <td>Select Diabetesmellitus or not</td>
+            <td><select name="diabetesmellitus">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select></td>
+        </tr>
+
+<tr>
+            <td>Select Pedal_edema or not</td>
+            <td><select name="pedal_edema">
+                <option value="-1"selected>
+
+                </option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select></td>
+        </tr>
+    </table>
+
+
+<table align="center" border="1">
+
+    <tr>
+        <td><input type="submit" value="Predict"/></td>
+    </tr>
+
+</table>
+</form>
+</body>
+</html>
